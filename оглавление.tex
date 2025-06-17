@@ -1,0 +1,62 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{tocloft}
+\usepackage{setspace}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\setlength{\parindent}{0pt}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+\begin{document}
+
+\tableofcontents
+
+\section*{ВВЕДЕНИЕ}
+
+\section{ТЕОРЕТИЧЕСКИЕ ОСНОВЫ СТАТИСТИЧЕСКОГО АНАЛИЗА И МАШИННОГО ОБУЧЕНИЯ}
+
+\subsection{Статистические критерии и методы проверки гипотез}
+\subsubsection{Корреляция Кендалла-тау}
+\subsubsection{Корреляция Пирсона}
+\subsubsection{Корреляция Спирмена}
+
+\subsection{Доверительные интервалы для доли (бернуллиевой величины)}
+\subsubsection{Классические подходы построения интервалов}
+\paragraph{Wilson score interval}
+\paragraph{Jeffreys interval}
+\paragraph{Clopper–Pearson interval}
+\paragraph{Agresti–Coull interval}
+\subsubsection{Сравнение и обсуждение доверительных интервалов}
+\subsubsection{Примеры вычисления доверительных интервалов}
+
+\subsection{Примеры вычисления коэффициентов корреляции}
+\subsection{Примеры применения статистических критериев для проверки гипотез о значимости коэффициентов корреляции}
+
+\subsection{Методы и модели машинного обучения}
+\subsubsection{Логистическая регрессия: теоретические аспекты и интерпретация результатов}
+\subsubsection{Модель градиентного бустинга CatBoost}
+\subsubsection{Интерпретация моделей машинного обучения с помощью SHAP}
+
+\section{ПРАКТИЧЕСКИЙ АНАЛИЗ ВЛИЯНИЯ ОПЕРАЦИОННЫХ МЕТРИК НА УРОВЕНЬ CSAT}
+
+\subsection{Подготовка и описание данных}
+\subsubsection{Описание используемой витрины данных}
+\subsubsection{Операционные и неоперационные признаки в исследовании}
+
+\subsection{Исследование данных с использованием статистических критериев}
+\subsubsection{Анализ зависимости CSAT от времени жизни таска}
+\subsubsection{Анализ влияния различных факторов на оценки пользователей}
+
+\subsection{Построение и анализ моделей машинного обучения}
+\subsubsection{Построение логистической регрессии и анализ ее коэффициентов}
+\subsubsection{Применение модели CatBoost и анализ важности признаков с помощью SHAP}
+
+\section{РЕЗУЛЬТАТЫ И ВЫВОДЫ ИССЛЕДОВАНИЯ}
+\subsection{Оценка эффективности сокращения времени выполнения задач}
+\subsection{Интерпретация и практические рекомендации на основе моделей}
+
+\section*{ЗАКЛЮЧЕНИЕ}
+\section*{СПИСОК ИСТОЧНИКОВ}
+
+\end{document}

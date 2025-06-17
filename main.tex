@@ -1,161 +1,36 @@
-\documentclass[12pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[russian]{babel}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{titlesec}
-\usepackage{geometry}
-\geometry{a4paper, margin=2.5cm}
-\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
-\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+%%% Если работа выполняется в Overleaf, 
+%%% важно поменять тип компилятора
+%%% с "pdfLatex" или "Latex" на "XeLaTeX". 
+%%% Если этого не сделать, то и и компиляция
+%%% не будет работать, и при загрузке текста ВКР
+%%% на сайт МФТИ будут проблемы. 
 
-\title{\textbf{Исследование влияния операционных метрик на метрики удовлетворенности клиента}}
-\author{}
-\date{}
+%%% Если диплом получается очень маленький, 
+%%% смело увеличивай шрифт до 14го
+\documentclass[xetex,a4paper,14pt]{article} % 14й шрифт
+
+% Подключение преамбулы с необходимыми пакетами
+\input{inc/preamble}
 
 \begin{document}
+    %%% При загрузке текста ВКР на сайт МФТИ титульная страница
+    %%% будет сгенерирована автоматически, 
+    %%% скачиваешь её, добавляешь в папку inc. 
+    %%% Когда будет готово, включишь эту строчку. 
+    \includepdf[]{75844_title_30886.pdf} % Титульная страница
+    
+    %%% В наш год положение о ВКР требовала именно такой 
+    %%% последовательности секций работы.
+    \input{inc/0-annotation} % Аннотация
+    \tableofcontents % Содержание 
+    \clearpage
 
-\maketitle
-\thispagestyle{empty}
-\newpage
-
-\tableofcontents
-\thispagestyle{empty}
-\newpage
-
-\section{Введение}
-
-\subsection*{Цель исследования}
-\vspace{0.5em}
-
-\subsection*{Задачи исследования}
-\vspace{0.5em}
-
-\subsection*{Актуальность темы}
-\vspace{0.5em}
-
-\subsection*{Объект и предмет исследования}
-\vspace{0.5em}
-
-\subsection*{Методы исследования}
-\vspace{0.5em}
-
-\newpage
-\section{Обзор литературы и статистические критерии анализа связи между переменными}
-
-\subsection{Анализ современной литературы по изучаемой теме}
-
-\subsubsection{Подходы к измерению удовлетворенности клиентов}
-\vspace{0.5em}
-
-\subsubsection{Операционные метрики в управлении качеством обслуживания}
-\vspace{0.5em}
-
-\subsection{Статистические критерии для проверки гипотез о зависимости метрик}
-
-\subsubsection{Binomial test}
-\paragraph{Теоретическое описание}
-\vspace{0.5em}
-
-\paragraph{Пример использования}
-\vspace{0.5em}
-
-\subsubsection{Критерий Cramér's V}
-
-\paragraph{Теоретическое описание}
-\vspace{0.5em}
-
-\paragraph{Пример использования}
-\vspace{0.5em}
-
-\subsubsection{Критерий Пирсона ($\chi^2$)}
-
-\paragraph{Теоретическое описание}
-\vspace{0.5em}
-
-\paragraph{Пример использования}
-\vspace{0.5em}
-
-\subsubsection{Критерий корреляции Спирмена}
-
-\paragraph{Теоретическое описание}
-\vspace{0.5em}
-
-\paragraph{Пример использования}
-\vspace{0.5em}
-
-\subsubsection{Критерий корреляции Пирсона}
-
-\paragraph{Теоретическое описание}
-\vspace{0.5em}
-
-\paragraph{Пример использования}
-\vspace{0.5em}
-
-\subsubsection{ANOVA}
-\vspace{0.5em}
-
-\paragraph{Пример использования}
-\vspace{0.5em}
-
-\newpage
-\section{Методология}
-
-\subsection{Выбор методов исследования}
-\vspace{0.5em}
-
-\subsection{Описание этапов исследования}
-\vspace{0.5em}
-
-\subsection{Обоснование подхода}
-\vspace{0.5em}
-
-\newpage
-\section{Эмпирическая часть}
-
-\subsection{Представление данных: описание источника, объема и структуры информации}
-\vspace{0.5em}
-
-\subsection{Проведение анализа: выявление корреляций, построение регрессионных моделей, визуализация взаимосвязей}
-\vspace{0.5em}
-
-\subsection{Интерпретация результатов: какие операционные метрики оказывают наибольшее влияние на удовлетворенность клиентов}
-\vspace{0.5em}
-
-\subsection{Примеры кейсов}
-\vspace{0.5em}
-
-\newpage
-\section{Заключение}
-
-\subsection{Сводные выводы по результатам исследования}
-\vspace{0.5em}
-
-\subsection{Обоснование практической значимости}
-\vspace{0.5em}
-
-\subsection{Рекомендации по управлению ключевыми метриками}
-\vspace{0.5em}
-
-\subsection{Предложения для дальнейших исследований}
-\vspace{0.5em}
-
-\newpage
-\section{Список использованной литературы}
-
-\subsection{Научные статьи, книги, аналитические отчеты, нормативные документы, статистические источники, примененные в работе}
-\vspace{0.5em}
-
-\newpage
-\section{Приложения}
-
-\begin{itemize}
-    \item Таблицы с исходными данными
-    \item Результаты анализа (графики, диаграммы, модели)
-    \item Формулы и расчеты, используемые в эмпирической части
-    \item Примеры анкет или методик измерения метрик (если использовались)
-\end{itemize}
+    \input{inc/0-intro} % Введение
+    \input{inc/2-matherials-and-methods} % Материалы и методы
+    \input{inc/3-results} % Результаты эксперимента 
+    \input{inc/4-discussion} % Выводы
+    \input{inc/99-conclusion} % Заключение
+    \input{inc/0-bibliography} % Подключение библиографии
+    \input{inc/a-app} % Подключение приложения
 
 \end{document}
